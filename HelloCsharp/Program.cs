@@ -1,22 +1,15 @@
 ﻿
 Console.WriteLine("Benvenuto!");
 
-Console.WriteLine("I mesi dell'anno sono");
+string[] mesiAnno = { "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre" };
 
-Console.WriteLine("Gennaio");
-Console.WriteLine("Febbraio");
-Console.WriteLine("Marzo"); 
-Console.WriteLine("Aprile");
-Console.WriteLine("Maggio");
-Console.WriteLine("Giugno");
-Console.WriteLine("Luglio");
-Console.WriteLine("Agosto");
-Console.WriteLine("Settembre");
-Console.WriteLine("Ottobre");
-Console.WriteLine("Novembre");
-Console.WriteLine("Dicembre");
+Console.WriteLine("I mesi dell'anno sono: ");
+for (int i = 0; i < mesiAnno.Length; i++) {
+    Console.WriteLine(mesiAnno[i]);
+}
+ 
+Console.Write("Inbserisci il tuo mese preferito: ");
+var mese = Console.ReadLine();
 
-var stringa = Console.ReadLine(); 
-Console.Write("Inbserisci il tuo mese preferito: " + stringa);
 
 Console.WriteLine("Arrivederci");
